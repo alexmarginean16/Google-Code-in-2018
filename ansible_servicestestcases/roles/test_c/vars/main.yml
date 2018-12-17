@@ -1,0 +1,3 @@
+---
+# vars file for test_c
+service: rescue.service

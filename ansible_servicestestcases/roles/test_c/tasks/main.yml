@@ -1,0 +1,155 @@
+---
+# tasks file for test_c
+
+#- name: populate service facts
+#  service_facts:
+
+#- name: Making sure if service is running
+#  assert:
+#    that:
+#      - "ansible_facts.services['{{ service }}'].state == 'running'"
+#    success_msg: "The service {{ service }} is running"
+
+
+# STOP and DISABLE
+- name: Stopping & diabling service {{ service }}
+  service:
+    name: "{{ service }}"
+    state: stopped
+    enabled: no
+  register: service_status
+
+
+# REBOOT
+- name: Reboot a slow machine
+  reboot:
+    reboot_timeout: 1000
+
+
+# STATUS
+- name: populate service facts
+  service_facts:
+  
+- name: Displaying {{ service }} state
+  debug:
+    var: ansible_facts.services['{{ service }}'].state
+  
+- name: Displaying status of {{ service }}
+  shell: systemctl status {{ service }} | grep Active
+  register: command_result
+  failed_when: "'FAILED' in command_result.stderr"
+
+- debug:
+    var: command_result.stdout
+
+# START
+
+- name: Starting service {{ service }}
+  service:
+    name: "{{ service }}"
+    state: started
+  register: service_status
+
+
+# STATUS
+- name: populate service facts
+  service_facts:
+  
+- name: Displaying {{ service }} state
+  debug:
+    var: ansible_facts.services['{{ service }}'].state
+  
+- name: Displaying status of {{ service }}
+  shell: systemctl status {{ service }} | grep Active
+  register: command_result
+  failed_when: "'FAILED' in command_result.stderr"
+
+- debug:
+    var: command_result.stdout
+
+
+# STOP
+- name: Stopping service {{ service }}
+  service:
+    name: "{{ service }}"
+    state: stopped
+  register: service_status
+
+
+# STATUS
+- name: populate service facts
+  service_facts:
+  
+- name: Displaying {{ service }} state
+  debug:
+    var: ansible_facts.services['{{ service }}'].state
+  
+- name: Displaying status of {{ service }}
+  shell: systemctl status {{ service }} | grep Active
+  register: command_result
+  failed_when: "'FAILED' in command_result.stderr"
+
+- debug:
+    var: command_result.stdout
+
+
+# ENABLE
+- name: Enabling service {{ service }}
+  service:
+    name: "{{ service }}"
+    enabled: yes
+  register: service_status
+
+
+# REBOOT
+- name: Reboot a slow machine
+  reboot:
+    reboot_timeout: 1000
+
+
+# STATUS
+- name: populate service facts
+  service_facts:
+  
+- name: Displaying {{ service }} state
+  debug:
+    var: ansible_facts.services['{{ service }}'].state
+  
+- name: Displaying status of {{ service }}
+  shell: systemctl status {{ service }} | grep Active
+  register: command_result
+  failed_when: "'FAILED' in command_result.stderr"
+
+- debug:
+    var: command_result.stdout
+
+
+# DISABLE
+- name: Disabling service {{ service }}
+  service:
+    name: "{{ service }}"
+    enabled: no
+  register: service_status
+
+
+# REBOOT
+- name: Reboot a slow machine
+  reboot:
+    reboot_timeout: 1000
+
+
+# STATUS
+- name: populate service facts
+  service_facts:
+  
+- name: Displaying {{ service }} state
+  debug:
+    var: ansible_facts.services['{{ service }}'].state
+  
+- name: Displaying status of {{ service }}
+  shell: systemctl status {{ service }} | grep Active
+  register: command_result
+  failed_when: "'FAILED' in command_result.stderr"
+
+- debug:
+    var: command_result.stdout

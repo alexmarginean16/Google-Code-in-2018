@@ -1,0 +1,8 @@
+---
+# tasks file for test-case
+- name: Status of SELinux
+  command: getenforce
+  register: output
+      
+- debug: 
+    var: output.stdout

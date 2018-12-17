@@ -8,3 +8,11 @@ Code-in didn't just help me to get started with my coding career but it had a bi
 
 ## Timeline of the contest
 
+![Image of timeline](https://github.com/alexmarginean16/Google-Code-in-2018/blob/master/timeline.png)
+
+## Completed tasks
+
+- I've completed 25 tasks from the Fedora organization.
+- Every task with it's description can be found in this repository.
+
+![Image of completed tasks](https://github.com/alexmarginean16/Google-Code-in-2018/blob/master/completed-tasks.png)

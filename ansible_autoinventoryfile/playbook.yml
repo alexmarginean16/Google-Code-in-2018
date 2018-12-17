@@ -1,0 +1,13 @@
+- hosts: vm
+  vars:
+    group_name: ' {{ group_name }}'
+    connection_type: '{{ connection_type }}'
+    username: '{{ user }}'
+    password: '{{ pass }}'
+    host_address: '{{ host_addresses }}'
+
+  tasks:
+    - name: Ansible Template to inventory file
+      template:
+        src: template.j2
+        dest: hosts.ini

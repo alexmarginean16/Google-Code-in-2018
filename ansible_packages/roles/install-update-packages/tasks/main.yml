@@ -1,0 +1,25 @@
+---
+# tasks file for install-update-packages
+- name: install apache
+  yum:
+    name: httpd
+    state: present
+
+- name: install git
+  yum:
+    name: git
+    state: present
+
+- name: install nano
+  yum:
+    name: nano
+    state: present
+
+- name: ensure a list of packages is installed
+  yum:
+    name: "{{ packages }}"
+
+- name: upgrade hhtpd,git and nano packages
+  yum:
+    name: "{{ packages }}"
+    state: latest

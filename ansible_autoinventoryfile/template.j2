@@ -1,0 +1,4 @@
+[{{ group_name }}]
+{% for address in host_address.split(',') %}
+{{ address}} ansible_connection={{ connection_type }} ansible_user={{ username }} ansible_ssh_pass={{ password }}
+{% endfor %}

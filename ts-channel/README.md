@@ -14,4 +14,6 @@ In order to communicate over any network you either transmit or receive the data
 
 Preferred Boards: NodeMCU &#124; Raspberry PI &#124; Arduino + ESP8266
 
-Deliverable: sketch (code), circuit diagram, constructed circuit, and the Thingspeak channel
+### Deliverable: 
+
+sketch (code), circuit diagram, constructed circuit, and the Thingspeak channel

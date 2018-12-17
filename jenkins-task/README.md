@@ -20,4 +20,4 @@ To execute an Ansible playbook from Jenkins
 
 ### Deliverables
 
-Put the console output and Ansible playbook in a repo and steps on a README, share the link with the mentor (vipul@redhat.com)
+Put the console output and Ansible playbook in a repo and steps on a README, share the link with the mentor (FAS: siddharthvipul1)

@@ -17,6 +17,6 @@ Think of a job that needs automation
 
 think of a task that you have done and has taken a lot of time. Write down the steps you performed during the manual task
 
-###Deliverables
+### Deliverables
 
 write a blog and share the idea with a mentor. Mail the blog link to the mentor. (vipul@redhat)

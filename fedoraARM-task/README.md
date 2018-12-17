@@ -1,4 +1,4 @@
-#fedoraARM-task
+# fedoraARM-task
 
 The blog post I wrote can be found [here](https://medium.com/@alexsurvivmc/install-fedora-arm-on-a-raspberry-pi-eec5c0d470d3)
 

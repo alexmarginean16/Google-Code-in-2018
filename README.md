@@ -6,11 +6,11 @@ I spent about 1 and a half months working on tasks and communicating with mentor
 
 Code-in didn't just help me to get started with my coding career but it had a big impact on my talking and communication skills in the English language.
 
-## Timeline of the contest
+## :calendar:Timeline of the contest
 
 ![Image of timeline](https://github.com/alexmarginean16/Google-Code-in-2018/blob/master/timeline.png)
 
-## Completed tasks
+## :clipboard:Completed tasks
 
 - I've completed 25 tasks from the Fedora organization.
 - Every task with it's description can be found in this repository.

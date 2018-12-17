@@ -1,0 +1,18 @@
+Started by user Alex Marginean
+Building in workspace /var/lib/jenkins/workspace/test1
+[test1] $ /usr/bin/ansible-playbook /home/alex/playbook.yml -i /home/alex/hosts.ini -f 5
+
+PLAY [pb] ******************************************************************
+
+TASK [Gathering Facts] *****************************************************
+ok: [127.0.0.1]
+
+TASK [print task] **********************************************************
+ok: [127.0.0.1] => {
+    "msg": "Hey ansible"
+}
+
+PLAY RECAP *****************************************************************
+127.0.0.1                  : ok=2    changed=0    unreachable=0    failed=0   
+
+Finished: SUCCESS

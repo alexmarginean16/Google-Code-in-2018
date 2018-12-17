@@ -1,0 +1,8 @@
+---
+- name: pb
+  hosts: 127.0.0.1
+  connection: local
+  tasks:
+    - name: print task
+      debug:
+        msg: "Hey ansible"
